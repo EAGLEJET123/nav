@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Sticky Navbar with Dropdown</title>
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">WebLearn</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Courses ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Responsive Design</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+</header>
+
+<main>
+  <h1>Learn Web Design the Smart Way 🚀</h1>
+  <p>Master modern web design with hands-on projects and practical tutorials. 
+     Scroll down and see how this sticky navbar smoothly hides and reappears as you navigate the page. 
+     Resize to test mobile responsiveness!</p>
+     <!--Remove button when in use-->
+     <div class="copy-container">
+  <button class="copy-btn" id="copyBtn">📋 Copy Code</button>
+</div>
+</main>
+
+<script src="navbar.js"></script>
+
+</body>
+</html>
